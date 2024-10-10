@@ -1,0 +1,178 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+\title{Software Documentation and Technical Writing}
+\author{رنا احمد الشاردي \quad 44410337 \\ اريام محمد الكديسي \quad 444011065}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+In this project we will talk about Google Chrome browser, browser requirements, the tasks it performs, what is the purpose of this browser, and users’ opinions.
+\end{abstract}
+
+\textbf{Keywords:} Web browser, Problems Solves.
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section{INTRODUCTION}
+Google Chrome is a free web browser developed by Google, first released in 2008. It is known for its speed, simplicity, and user-friendly design, quickly becoming one of the most popular browsers worldwide. Chrome is built on the open-source Chromium project and uses the Blink rendering engine, offering seamless performance across various devices and platforms. With features like tabbed browsing, integrated search, and support for extensions, Chrome enhances the user experience while maintaining robust security measures. Its frequent updates ensure the browser stays optimized for the latest web technologies and security standards.
+
+\section{SYSTEM REQUIREMENTS}
+
+\subsection{Non-functional requirements}
+\begin{itemize}
+    \item Easy to use.
+    \item Processing orders in 0.3 seconds 24/7 access.
+    \item Information protection.
+    \item Handling a large number of orders and users.
+\end{itemize}
+
+\subsection{User Requirements}
+\textbf{Functional requirements}
+\begin{itemize}
+    \item Users must have the ability to register in the system and create a personal account.
+    \item The system must provide a search box and allow the user to enter various search criteria.
+    \item The user can send messages to the support team to solve problems.
+    \item Users should be able to submit ratings and reviews.
+    \item The system should support multiple languages to accommodate users from different regions.
+\end{itemize}
+
+\section{Tasks the software can do}
+\begin{enumerate}
+    \item \textbf{Web Browsing:} Allows users to visit websites, search for information, and navigate the internet seamlessly.
+    \item \textbf{Add-ons and Extensions:} Users can customize their browsing experience by adding extensions that enhance functionality, such as ad blockers, password managers, and productivity tools.
+    \item \textbf{Cross-device Sync:} With a Google Account, users can sync bookmarks, history, and settings across multiple devices, ensuring a seamless experience whether on desktop, tablet, or smartphone.
+    \item \textbf{Incognito Mode:} This feature enables private browsing, allowing users to browse the web without saving their history, cookies, or site data, providing an additional layer of privacy.
+\end{enumerate}
+
+\section{DETERMINE THE PROGRAM PURPOSE}
+Google Chrome exists as a web browser designed to provide users with fast, secure, and user-friendly access to the internet. Its primary purpose is to allow individuals to navigate and interact with web content such as websites, applications, and multimedia.
+
+\subsection{Problems It Solves}
+\begin{itemize}
+    \item \textbf{Fast Browsing:} Chrome is designed to load websites quickly, utilizing its efficient engine to reduce delays.
+    \item \textbf{Security:} It addresses the need for secure internet usage by including features such as Safe Browsing, sandboxing, and automatic updates to protect users from malware, phishing, and other online threats.
+    \item \textbf{Compatibility:} Chrome supports modern web standards, allowing it to run the latest web applications and media content smoothly across different platforms.
+    \item \textbf{Customization:} Through extensions and themes, Chrome meets the need for customization, allowing users to enhance their browsing experience with added functionality.
+    \item \textbf{Cross-Device Sync:} Chrome solves the problem of accessing bookmarks, history, and passwords across multiple devices by providing synchronization through Google accounts.
+\end{itemize}
+
+\subsection{Needs It Addresses}
+\begin{itemize}
+    \item Efficiency: Users need a browser that performs efficiently with minimal lag.
+    \item Security: Protecting personal information while browsing is a critical need.
+    \item Usability: Chrome provides an intuitive and easy-to-navigate interface for users.
+    \item Consistency Across Devices: Users benefit from the ability to use the browser seamlessly across phones, tablets, and computers with the same settings and data.
+\end{itemize}
+
+\section{Conduct a Survey or Interview}
+We conducted a survey and this survey showed that there is a large percentage of people using Google Chrome, and that Google Chrome users are satisfied with the browser’s services and ease of use, and that there are suggestions they wanted to improve Google Chrome.
+
+\section{Research Existing Programs}
+There are many browsers similar to Google Chrome, including:
+
+\subsection{Microsoft Edge}
+\textbf{Advantages:}
+\begin{itemize}
+    \item Microsoft Edge comes with a reading mode, which allows you to remove all the extra unwanted stuff on a web page other than the main text such as images, ads, and sidebars, so it gives you an experience closer to reading a newspaper.
+    \item Microsoft Edge comes with high speed, speed is one of the most important aspects to consider when deciding which browser should become your default option, according to Microsoft, Microsoft Edge is the fastest browser on the market.
+\end{itemize}
+
+\textbf{Disadvantages:}
+\begin{itemize}
+    \item Microsoft Edge has no extension support, no extensions means no mainstream adoption, and there’s a lack of full control.
+    \item Lack of privacy: Microsoft Edge used to store private data when browsing in InPrivate mode.
+    \item Microsoft Edge doesn’t display the protocol used to connect to the active site; the only indicator it gives that you’re connected to a secure site (https) is a padlock icon in front of the address.
+\end{itemize}
+
+\subsection{Safari}
+\textbf{Advantages:}
+\begin{itemize}
+    \item Tabs are automatically synced between Mac and iPhone using iCloud.
+    \item Ability to share site links with a single click to email, social media, and share sites directly between Android and iPhone.
+    \item Improves readability of pages that don’t display well on the device.
+\end{itemize}
+
+\textbf{Disadvantages:}
+\begin{itemize}
+    \item Limited support for add-ons, slow in releasing add-ons provided by Google Chrome.
+    \item Only available for Apple and designed for Apple devices only and closed source.
+    \item Cannot display icons and thus it is difficult for the user to distinguish between existing tags.
+\end{itemize}
+
+\subsection{Comparison}
+\textbf{Google Chrome:} It is a giant drainer of device resources, compared to Apple Safari and Microsoft Edge which are more efficient in their use of RAM.
+
+\textbf{Safari:} Safari, Apple’s default web browser, is known for its efficiency and optimization for macOS and iOS devices, focusing on keeping Safari’s RAM consumption low while providing a smooth browsing experience.
+
+\textbf{Microsoft Edge:} Microsoft Edge has undergone a major transformation, with the new Chromium-based Edge browser inheriting some of Chrome’s memory consumption patterns but with improvements to its performance.
+
+\section{Google Chrome System Architectures}
+\begin{enumerate}
+    \item \textbf{Multi-Process Architecture:}
+    \begin{itemize}
+        \item Processes: Chrome uses a multi-process model where each tab runs in its own process.
+        \item Renderer Process: Each tab typically runs a separate renderer process which is responsible for rendering web pages.
+        \item Browser Process: This main process manages the user interface and handles interactions with the operating system and the network.
+    \end{itemize}
+    \item \textbf{Blinks and V8 Engine:}
+    \begin{itemize}
+        \item Blink: The rendering engine responsible for parsing HTML, CSS, and executing JavaScript.
+        \item V8: JavaScript engine that compiles JavaScript into machine code for faster execution.
+    \end{itemize}
+    \item \textbf{User Interface Layer:} The browser's user interface is handled by the browser process.
+    \item \textbf{Networking:} Chrome manages network requests using a dedicated networking stack.
+    \item \textbf{Security Features:}
+    \begin{itemize}
+        \item Sandboxing: Each renderer process is sandboxed.
+        \item Site Isolation: Enhances security by ensuring that different websites run in separate processes.
+    \end{itemize}
+    \item \textbf{Extensions and Plugins:} Chrome supports various extensions, which run in separate processes.
+    \item \textbf{Storage and Caching:} Chrome uses several storage mechanisms, including IndexedDB, localStorage, and service workers.
+    \item \textbf{Performance Optimization:} Features like lazy loading, prefetching, and aggressive caching help to speed up browsing.
+\end{enumerate}
+
+\section{Data Model}
+
+\section{Outline Technical Specification}
+Your computer should meet the minimum system requirements before you install and use Chrome browser.
+
+\subsection{Windows}
+To use Chrome browser on Windows, you'll need:
+\begin{itemize}
+    \item Windows 7, Windows 8, Windows 10, or Windows 11.
+    \item 2 GB of RAM or more.
+    \item 350 MB of free disk space.
+\end{itemize}
+
+\subsection{Mac}
+To use Chrome browser on Mac, you'll need:
+\begin{itemize}
+    \item Mac OS X 10.10 or later.
+    \item 2 GB of RAM or more.
+    \item 350 MB of free disk space.
+\end{itemize}
+
+\subsection{Linux}
+To use Chrome browser on Linux, you'll need:
+\begin{itemize}
+    \item A recent version of Ubuntu, Debian, Fedora, or openSUSE.
+    \item 2 GB of RAM or more.
+    \item 350 MB of free disk space.
+\end{itemize}
+
+\section{Conclusion}
+Google Chrome is an exceptional web browser that offers users a fast, secure, and user-friendly experience. It addresses common browsing needs, including speed, security, and customization, while continually evolving to meet the demands of modern web technologies. The survey results indicate that users are largely satisfied with Chrome's performance and features, although there are areas for improvement. As the digital landscape continues to grow and change, Google Chrome remains a leading choice for users seeking a reliable and efficient browser for their internet activities.
+
+\end{document}
